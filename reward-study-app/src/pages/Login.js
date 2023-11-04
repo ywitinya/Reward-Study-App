@@ -17,7 +17,7 @@ const Login = () => {
         <button type="submit">Enter</button>
       </form>
       <p>
-        or <Link to="/signup">Sign Up</Link>
+        {/* or <Link to="/signup">Sign Up</Link> */}
       </p>
     </div>
   );
