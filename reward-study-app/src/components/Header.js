@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header>
-      <nav>
-        <ul>
+    <header className="bg-gray-200 p-4">
+      <nav className="flex items-center justify-between">
+        <ul className="flex space-x-4">
           <li>
             {/* <Link to="/">Home</Link> */}
             Home
@@ -27,4 +27,3 @@ export default function Header() {
     </header>
   );
 }
-
