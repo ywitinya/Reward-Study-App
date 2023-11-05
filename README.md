@@ -1,3 +1,5 @@
+##StudySparx
+
 ## Inspiration
 We were inspired by the lack in tools for students that are incentive-oriented and accessibility-centric. 
 
