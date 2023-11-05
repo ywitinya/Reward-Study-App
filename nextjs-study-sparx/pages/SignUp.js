@@ -5,6 +5,7 @@ const Signup = () => {
     firstName: '',
     lastName: '',
     username: '',
+    email: '',
     password: '',
     reEnterPassword: '',
   });
@@ -14,12 +15,32 @@ const Signup = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here, e.g., send the data to a server.
-    console.log(formData);
+
+    try {
+      // Send user registration data to the backend for processing
+      const response = await fetch('/api/register', {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        console.log('Registration successful');
+        // Display a success message or redirect the user to a confirmation page
+      } else {
+        console.error('Registration failed');
+        // Display an error message to the user
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
+  
   return (
     <div className="flex justify-center items-center h-screen">
       <form onSubmit={handleSubmit} className="bg-gray-200 p-6 rounded-lg">
@@ -50,6 +71,12 @@ const Signup = () => {
             className="w-full border border-gray-300 rounded-md p-2 mb-2"
           />
           <input
+                type="text"
+                name="email"
+                placeholder="Email"
+                className="w-full border border-gray-300 rounded-md p-2 mb-2"
+              />
+          <input
             type="password"
             name="password"
             value={formData.password}
@@ -66,7 +93,7 @@ const Signup = () => {
             className="w-full border border-gray-300 rounded-md p-2 mb-2"
           />
         </div>
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">
+        <button type="submit" className="bg-blue-500 text-white p-2 rounded-md hover-bg-blue-600">
           Signup
         </button>
       </form>
