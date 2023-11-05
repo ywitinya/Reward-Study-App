@@ -1,39 +1,24 @@
-# Reward-Study-App
-Reward Study App
-    Table of Contents
-    1.	Introduction
-    2.	Features
-    3.	Goals
-    4.	Technologies
-Introduction
-    The Reward Study App is a platform designed to empower individuals to enhance their study habits, stay motivated, and achieve their learning goals. This README provides an overview of the project, its features, goals, and the technologies used in its development.
-Features
-    Reward System
-    •	Our app incorporates a reward system to motivate users to reach their study goals.
-    •	Users can set personal rewards as an incentive to accomplish their learning objectives.
-    Suggested Rewards
-    •	The app offers suggested rewards based on user preferences and achievements.
-    Visual Progress Tracker
-    •	Users can visually track their progress by growing a virtual plant or building as they complete study goals.
-    •	This feature provides a fun and tangible way to demonstrate learning progress.
-    Goal Tracking
-    •	The app helps users track their study goals, whether they are short-term, such as quizzes, or long-term, like studying 300 hours in a month.
-    Time Tracking
-    •	Users can monitor their study time to ensure they're meeting their time-bound learning goals.
-    •	We offer suggestions, such as the Pomodoro method, to optimize study sessions.
-    Test Roadmap
-    •	The project is organized into units, with comprehensive testing for quality assurance.
-    •	The test roadmap includes unit testing for various project components.
-    Goals
-    The primary goals of the Reward Study App include:
-    •	Motivating users to study effectively and achieve their learning objectives.
-    •	Providing a visually appealing and enjoyable experience for users.
-    •	Tracking study progress and time spent on different learning tasks.
-    •	Offering personalized reward systems to boost user engagement.
-Technologies
-    Front-End
-    React: A popular JavaScript library for building user interfaces.
-    Figma: Used for designing and prototyping the app's user interface.
-    Back-End
-    MongoDB: A NoSQL database for storing user data.
+## Inspiration
+We were inspired by the lack in tools for students that are incentive-oriented and accessibility-centric. 
+
+## What it does
+Our key feature is the combination of our in-house Pomodoro technique and Sparx, a "currency" that you earn as you progress in focused time and one that you can spend with personalized rewards. We take into both short- and long-term goals, both timed and tasks.
+
+## How we built it
+First, we used Figma to create wireframes of Study Sparx. We then used Next.js and TailwindCSS to create an intuitive user interface that helps track timed goals and tasks. By using components and Next.js's framework, we were able to easily delegate tasks amongst the team. Furthermore, for the back-end we utilized Redis as a tool. 
+
+## Challenges we ran into
+The biggest challenge for us was bridging our knowledge based on coursework, previous experience, and docs to a practical application, especially for technologies we had not seen before like Redis and Taipy.
+
+## Accomplishments that we're proud of
+We were proud of our ability to prioritize which tasks to complete under the time pressure. This also allowed us to evaluate what was important to us, which was providing a tool for individuals with ADHD and ADD, thus pushing us to focus on features such as our timed goals feature.
+
+## What we learned
+We learned that ultimately, community matters a lot. Thanks to the friends we made here and of course, Isa, we were able to progress farther than we otherwise would have. Looking forward, we will all be more appreciative of the communities hackathons inherently foster.
+
+## What's next for Study Sparx
+- Disclaimers and Notifications if exceeds frequency/duration
+- Roadmaps for long-term goals
+- Recommended Goals/Goal Setting AND default goals 
+- Community platform
 
