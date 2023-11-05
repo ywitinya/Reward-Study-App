@@ -6,17 +6,16 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
-    // You can retrieve user input from the form fields here
+    
     const email = e.target.email.value;
     const password = e.target.password.value;
 
     try {
-      // Use the `loginWithRedirect` function from Auth0 to initiate the authentication process
+     
       await loginWithRedirect({
-        screen_hint: 'login', // Show the login screen
-        login_hint: email, // Prefill the email field
-        // Additional options or custom parameters can be added here
+        screen_hint: 'login', 
+        login_hint: email, 
+         here
       });
     } catch (error) {
       console.error('Authentication error:', error);
@@ -27,7 +26,7 @@ const Login = () => {
     <>
       <div className="flex  space-x-8 h-screen">
         <div className="bg-purple-700 p-6 rounded-lg">
-          <h1 className="text-7xl text-white font-bold mb-4">Knowledge Kash</h1>
+          <h1 className="text-9xl text-white font-bold mb-4">Study Sparx</h1>
         </div>
         <form className="mb-4" onSubmit={handleLogin}>
           <div className="pt-40 pl-10">
